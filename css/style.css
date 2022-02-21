@@ -1,0 +1,132 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+body::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 50%;
+    background-color: #cccccc30;
+    z-index: -1;
+    top: 0px;
+    transition: .3s ease-in-out;
+}
+#wrap-content{
+    width: calc(100% - 40px);
+    display: flex;
+    height: 600px;
+    transition: .3s ease-in-out;
+}
+#avt{
+    width: 50%;
+    object-fit: cover;
+    margin: 20px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+#main-content{
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sub-title{
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.strong-title {
+    font-size: 33px;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+    font-weight: 900;
+    line-height: 40px;
+    transition: .3s ease-in-out;
+}
+.normal-text{
+    font-size: 16px;
+    margin-bottom: 30px;
+    transition: .3s ease-in-out;
+}
+.sub-above{
+    margin: 0px;
+    letter-spacing: 3px;
+    transition: .3s ease-in-out;
+}
+.inline-content{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.inline-content > svg{
+    width: 30px;
+    height: 30px;
+    padding: 10px 20px 10px 0px;
+    transition: .3s ease-in-out;
+}
+.inline-content a{
+    color: #000;
+    text-decoration: none;
+}
+.bottom-sub{
+    margin-bottom: 30px;
+}
+
+
+#heart-decor{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    transform: scale(.7);
+    animation: heart 1s linear infinite;
+    z-index: 1;
+}
+@keyframes heart {
+    0%, 100%{
+        transform: scale(.8);
+    }
+    50%{
+        transform: scale(.7);
+    }
+}
+#heart-decor > span{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    background-color: rgb(255, 35, 35);
+}
+#heart-decor > span:nth-child(1){
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+#heart-decor > span:nth-child(2) {
+    top: 5px;
+    left: -9px;
+    border-radius: 50%;
+}
+#heart-decor > span:nth-child(3){
+    top: 5px;
+    right: -9px;
+    border-radius: 50%;
+}
+p{
+    z-index: 2;
+}
+a{
+    z-index: 2;
+}

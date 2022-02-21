@@ -1,0 +1,62 @@
+@media screen and (max-width: 900px) and (min-width : 635px) {
+
+    #wrap-content{
+        height: 420px;
+    }
+
+    .inline-content > svg {
+        width: 25px;
+        height: 25px;
+        padding: 5px 10px 5px 0px;
+    }
+    .normal-text{
+        margin-bottom: 18px;
+        font-size: 14px;
+    }
+    .strong-title {
+        font-size: 24px;
+        margin-bottom: 5px;
+        letter-spacing: -1px;
+        font-weight: 900;
+        line-height: 30px;
+    }
+    .sub-above {
+        margin: 0px;
+        letter-spacing: 1.5px;
+        font-size: 14px;
+    }
+    .inline-content {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    #avt {
+        margin: 5px;
+    }
+    #main-content{
+        margin: 5px;
+    }
+    #avt{
+        display: none;
+    }
+    body{
+        background: url("../image/ava.jpg");
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+    }
+    body::after{
+        height: 100%;
+        background-color: #00000090;
+    }
+    .inline-content a{
+        color: #fff;
+    }
+    #heart-decor{
+        bottom: 20px;
+        right: 20px;
+    }
+}
